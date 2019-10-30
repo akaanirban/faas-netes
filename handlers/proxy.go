@@ -5,6 +5,7 @@ package handlers
 
 import (
 	"fmt"
+	"log"
 	"math/rand"
 	"net/url"
 	"strings"
