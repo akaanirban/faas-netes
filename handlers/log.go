@@ -7,7 +7,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/openfaas/faas-netes/k8s"
+	"github.com/akaanirban/faas-netes/k8s"
 	"github.com/openfaas/faas-provider/logs"
 	"k8s.io/client-go/kubernetes"
 )

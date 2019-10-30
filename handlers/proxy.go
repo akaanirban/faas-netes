@@ -75,7 +75,7 @@ func (l *FunctionLookup) Resolve(name string) (url.URL, error) {
 
 	all := len(svc.Subsets[0].Addresses)
 	target := rand.Intn(all)
-
+	log.Printf("Proxy will now select random endpoint - %d", target)
 	serviceIP := svc.Subsets[0].Addresses[target].IP
 
 	urlStr := fmt.Sprintf("http://%s:%d", serviceIP, watchdogPort)

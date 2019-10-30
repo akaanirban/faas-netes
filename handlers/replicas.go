@@ -10,7 +10,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/openfaas/faas-netes/types"
+	"github.com/akaanirban/faas-netes/types"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 )
@@ -115,7 +115,7 @@ func MakeReplicaReader(defaultNamespace string, clientset *kubernetes.Clientset)
 			return
 		}
 
-		log.Printf("Read replicas - %s %s, %d/%d\n", functionName, lookupNamespace, function.AvailableReplicas, function.Replicas)
+		log.Printf("Read -------------------->>>>>>>>>> replicas - %s %s, %d/%d\n", functionName, lookupNamespace, function.AvailableReplicas, function.Replicas)
 
 		functionBytes, _ := json.Marshal(function)
 		w.Header().Set("Content-Type", "application/json")

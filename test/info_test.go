@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/openfaas/faas-netes/handlers"
+	"github.com/akaanirban/faas-netes/handlers"
 	types "github.com/openfaas/faas-provider/types"
 )
 

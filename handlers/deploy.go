@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/openfaas/faas-netes/k8s"
+	"github.com/akaanirban/faas-netes/k8s"
 
 	types "github.com/openfaas/faas-provider/types"
 	appsv1 "k8s.io/api/apps/v1"

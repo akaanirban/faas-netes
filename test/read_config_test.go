@@ -6,7 +6,7 @@ package test
 import (
 	"testing"
 
-	"github.com/openfaas/faas-netes/types"
+	"github.com/akaanirban/faas-netes/types"
 )
 
 type EnvBucket struct {

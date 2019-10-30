@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/openfaas/faas-netes/k8s"
+	"github.com/akaanirban/faas-netes/k8s"
 
 	types "github.com/openfaas/faas-provider/types"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
