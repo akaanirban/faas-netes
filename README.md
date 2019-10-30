@@ -54,6 +54,11 @@ faas-netes can be configured with environment variables, but for a full set of o
 | `faasIdler.resources`      | CPU/Memory resources requests/limits (memory: `64Mi`)              |
 | `basicAuthPlugin.resources`| CPU/Memory resources requests/limits (memory: `50Mi`, cpu: `20m`)  |
 
+### Endpoint loadbalancing using direct functions
+```
+helm upgrade openfaas --install faas-netes/chart/openfaas/ --namespace openenfaas --set gateway.directFunctions=false
+```
+
 ### Readiness checking
 
 The readiness checking for functions assumes you are using our function watchdog which writes a .lock file in the default "tempdir" within a container. To see this in action you can delete the .lock file in a running Pod with `kubectl exec` and the function will be re-scheduled.
